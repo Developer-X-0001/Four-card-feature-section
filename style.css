@@ -1,1 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* ------ Primary ------ */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /* ------ Neutral ------ */
+    --verydarkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+main {
+    text-align: center;
+}
+.title-1 {
+    font-size: 40px;
+    font-weight: 200;
+}
+.title-2 {
+    line-height: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--verydarkblue);
+}
+.title-desc {
+    color: var(--grayishblue);
+    padding: 1em;
+}
+.boxes {
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.boxes h2 {
+    line-height: 0;
+    color: var(--verydarkblue);
+}
+.boxes p {
+    color: var(--grayishblue);
+    font-size: 15px;
+}
+.box-1 {
+    margin: 1em;
+    padding: 2em;
+    height: 15em;
+    width: 20em;
+    background: white;
+    border-radius: 0.5em;
+    background-image: url(/images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2em right 2em;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5), 0px -0.5em 0px -0.25em var(--cyan);
+}
+.box-2 {
+    margin: 1em;
+    padding: 2em;
+    height: 15em;
+    width: 20em;
+    background: white;
+    border-radius: 0.5em;
+    background-image: url(/images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2em right 2em;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5), 0px -0.5em 0px -0.25em var(--red);
+}
+.box-3 {
+    margin: 1em;
+    padding: 2em;
+    height: 15em;
+    width: 20em;
+    background: white;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5);
+    border-radius: 0.5em;
+    background-image: url(/images/icon-karma.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2em right 2em;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5), 0px -0.5em 0px -0.25em var(--orange);
+}
+.box-4 {
+    margin: 1em;
+    padding: 2em;
+    height: 15em;
+    width: 20em;
+    background: white;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5);
+    border-radius: 0.5em;
+    background-image: url(/images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2em right 2em;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5), 0px -0.5em 0px -0.25em var(--blue);
+}
+
+@media screen and (max-width: 900px) {
+    .title-1 {
+        font-size: 32px;
+        font-weight: 200;
+    }
+    .title-2 {
+        line-height: 1;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--verydarkblue);
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer {
+    padding: 0 1em;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2em;
+    color: var(--grayishblue);
+    font-family: 'Poppins';
+    border-radius: 0.5em;
+    padding: auto;
+    box-shadow: 0px 1em 1em hsla(229, 6%, 66%, 0.5), 0px -0.5em 0px -0.25em #00d169;
+}
+footer a {
+    text-decoration: none;
+    color: var(--verydarkblue);
+    transition: color 0.25s;
+}
+footer a:hover {
+    color: #00d169;
+}
